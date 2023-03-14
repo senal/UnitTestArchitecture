@@ -5,8 +5,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="xunit" Version="2.4.2"/>
-    <PackageReference Include="TngTech.ArchUnitNET.xUnit" Version="0.10.5"/>
-    <PackageReference Include="TngTech.ArchUnitNET" Version="0.10.5"/>
+    <PackageReference Include="xunit" />
+    <PackageReference Include="TngTech.ArchUnitNET.xUnit" />
+    <PackageReference Include="TngTech.ArchUnitNET" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Customer.Api\Customer.Api.csproj" />
+    <ProjectReference Include="..\Customer.Domain\Customer.Domain.csproj" />
+    <ProjectReference Include="..\Customer.Infrastructure\Customer.Infrastructure.csproj" />
+    <ProjectReference Include="..\Customer.Application\Customer.Application.csproj" />
   </ItemGroup>
 </Project>
